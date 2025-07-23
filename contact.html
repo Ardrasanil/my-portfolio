@@ -10,12 +10,12 @@
     body {
       margin: 0;
       font-family: sans-serif;
-      background: linear-gradient(to bottom right, #000000, #0f0f0f);
+      background: #000;
       color: white;
     }
 
     nav {
-      background: rgba(0, 0, 0, 0.8);
+      background: #0a0a0a;
       display: flex;
       justify-content: center;
       gap: 30px;
@@ -23,11 +23,11 @@
       position: sticky;
       top: 0;
       z-index: 999;
-      box-shadow: 0 0 15px #ff1a75;
+      border-bottom: 1px solid #DCEFFF22;
     }
 
     nav a {
-      color: #ff1a75;
+      color: #DCEFFF;
       text-decoration: none;
       font-weight: bold;
       font-size: 1rem;
@@ -35,8 +35,7 @@
     }
 
     nav a:hover {
-      color: white;
-      text-shadow: 0 0 10px #ff1a75;
+      color: #ffffff;
     }
 
     header {
@@ -46,8 +45,7 @@
 
     h1 {
       font-size: 3rem;
-      color: #ff1a75;
-      text-shadow: 0 0 10px #ff1a75;
+      color: #DCEFFF;
     }
 
     .contact-container {
@@ -62,11 +60,11 @@
 
     .contact-form {
       flex: 1 1 450px;
-      background: rgba(255, 26, 117, 0.05);
-      border: 1px solid rgba(255, 26, 117, 0.2);
+      background: #0d0d0d;
+      border: 1px solid #DCEFFF33;
       border-radius: 20px;
       padding: 30px;
-      box-shadow: 0 0 20px rgba(255, 26, 117, 0.3);
+      box-shadow: 0 0 15px #DCEFFF44;
     }
 
     .contact-form input,
@@ -88,21 +86,21 @@
     }
 
     .contact-form button {
-      background-color: #ff1a75;
-      color: white;
+      background-color: #DCEFFF;
+      color: black;
       padding: 12px 25px;
       border: none;
       border-radius: 10px;
       font-size: 1rem;
       cursor: pointer;
-      box-shadow: 0 0 10px #ff1a75;
+      box-shadow: 0 0 12px #DCEFFF55;
       transition: 0.3s ease;
     }
 
     .contact-form button:hover {
-      background-color: #e6005c;
+      background-color: #ffffff;
       transform: scale(1.05);
-      box-shadow: 0 0 15px #ff1a75;
+      box-shadow: 0 0 15px #DCEFFF;
     }
 
     .contact-side {
@@ -117,13 +115,13 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 3px solid #ff1a75;
-      box-shadow: 0 0 15px #ff1a75;
+      border: 3px solid #DCEFFF;
+      box-shadow: 0 0 15px #DCEFFF;
       margin-bottom: 15px;
     }
 
     .contact-side a {
-      color: #ff1a75;
+      color: #DCEFFF;
       text-decoration: none;
       font-size: 1.1rem;
       display: inline-block;
@@ -131,7 +129,7 @@
     }
 
     .contact-side a:hover {
-      text-shadow: 0 0 10px #ff1a75;
+      text-shadow: 0 0 10px #DCEFFF;
     }
 
     footer {
@@ -171,7 +169,6 @@
   <section class="contact-container">
     <div class="contact-form">
       <form action="https://formsubmit.co/ardrasanil1@gmail.com" method="POST">
-        <!-- Protect from bots -->
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="thankyou.html">
 
@@ -183,7 +180,6 @@
     </div>
     
     <div class="contact-side">
-     
       <p>Connect with me on LinkedIn</p>
       <a href="https://www.linkedin.com/in/ardra-s-anil-a450862b3" target="_blank">View Profile</a>
     </div>

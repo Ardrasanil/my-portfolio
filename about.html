@@ -6,39 +6,38 @@
   <title>About Me</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
-      font-family:  sans-serif;
-      background: radial-gradient(ellipse at top left, #0f0f0f, #000000);
-      color: white;
+      font-family: sans-serif;
+      background: #000;
+      color: #fff;
     }
 
-    /* === NAVBAR === */
     nav {
-      background: rgba(0, 0, 0, 0.8);
+      background: #0a0a0a;
       padding: 15px 30px;
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: 0 0 15px #ff1a75;
       position: sticky;
       top: 0;
       z-index: 999;
+      border-bottom: 1px solid #DCEFFF22;
     }
 
     nav a {
-      color: #ff1a75;
+      color: #DCEFFF;
       text-decoration: none;
       margin: 0 15px;
-      font-weight: bold;
+      font-weight: 500;
       font-size: 1rem;
       transition: 0.3s;
     }
 
     nav a:hover {
-      color: white;
-      text-shadow: 0 0 10px #ff1a75;
+      color: #ffffff;
     }
 
     header {
@@ -48,12 +47,11 @@
 
     h1 {
       font-size: 3rem;
-      color: #ff1a75;
-      text-shadow: 0 0 10px #ff1a75;
+      color: #DCEFFF;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       max-width: 700px;
       margin: auto;
       line-height: 1.8;
@@ -64,40 +62,40 @@
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      border: 5px solid #ff1a75;
-      box-shadow: 0 0 30px #ff1a75;
+      border: 4px solid #DCEFFF;
       margin: 30px auto;
       display: block;
       object-fit: cover;
     }
 
     .glow-box {
-      background: rgba(255, 26, 117, 0.1);
-      border: 1px solid rgba(255, 26, 117, 0.5);
-      padding: 20px;
+      background: #0d0d0d;
+      border: 1px solid #DCEFFF33;
+      padding: 25px;
       margin: 40px auto;
       max-width: 800px;
       border-radius: 10px;
-      box-shadow: 0 0 15px #ff1a75;
+    }
+
+    .glow-box h2 {
+      color: #DCEFFF;
+      margin-bottom: 10px;
     }
 
     .btn-cv {
-      background: #ff1a75;
-      color: white;
+      background: #DCEFFF;
+      color: #000;
       padding: 12px 25px;
       font-size: 1rem;
       border: none;
       border-radius: 30px;
       margin-top: 20px;
       cursor: pointer;
-      box-shadow: 0 0 15px #ff1a75;
       transition: 0.3s;
     }
 
     .btn-cv:hover {
-      background: black;
-      border: 1px solid #ff1a75;
-      color: #ff1a75;
+      background: #ffffff;
     }
 
     footer {
@@ -138,12 +136,14 @@
     <h1>About Me</h1>
     <p>Hi, I'm Ardra, a creative UI/UX and Graphic Designer passionate about turning imagination into reality. I specialize in blending aesthetics with functionality to craft user-centric, engaging digital experiences.</p>
    
-    <a href="Ardraresumepdf.pdf" download class="download-btn">  <button class="btn-cv">Download CV</button></a>
+    <a href="Ardraresumepdf.pdf" download class="download-btn">  
+      <button class="btn-cv">Download CV</button>
+    </a>
   </header>
 
-  <!-- GLOW SECTION -->
+  <!-- INFO BOX -->
   <div class="glow-box">
-    <h2 style="color: #ff1a75;">My Journey</h2>
+    <h2>My Journey</h2>
     <p>I began my design journey from the basics of graphic tools and gradually ventured into user interface design. With a strong foundation in front-end technologies and artistic flair, I aim to create designs that speak louder than words.</p>
   </div>
 

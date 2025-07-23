@@ -9,6 +9,11 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
+    <!-- Opening Animation -->
+<div id="opening-animation">
+  <h1 class="loader-name">Hey Ardra Here!!</h1>
+</div>
+
     <div id="loader">
   <div class="spinner"></div>
   <p>Loading...</p>
@@ -27,14 +32,24 @@
     </div>
 
     <!-- ✅ Hero Section with Tilt Effect -->
-    <div class="tilt-container">
-      <h1>Hello, I'm <span>Ardra</span></h1>
-      <div class="typewriter" id="typewriter-text"></div>
-      <p>UI/UX and Graphic Designer</p>
-      
-      <a href="contact.html" class="btn-hire"><button>Hire Me</button></a>
+    <!-- ✅ Start of closable wrapper -->
+<div id="intro-box" style="position: relative;">
 
-    </div>
+  <!-- ✅ Close button -->
+  <button id="close-btn" class="close-btn">×</button>
+
+  <div class="tilt-container">
+   <h1 class="subtle-neon">Hello, I'm <span>Ardra</span></h1>
+    <div class="typewriter" id="typewriter-text"></div>
+    <p>UI/UX and Graphic Designer</p>
+    <a href="contact.html" class="btn-hire"><button>Hire Me</button></a>
+  </div>
+
+</div>
+<div class="scroll-down-indicator">
+  <span></span>
+</div>
+
   </header>
 
   <section id="about" data-aos="fade-up">
@@ -51,12 +66,17 @@
   <section id="skills">
   <h2>My Skills</h2>
   <div class="grid skills-grid">
-    <div>HTML</div>
-    <div>CSS</div>
-    <div>JavaScript</div>
-    <div>MySQL</div>
-    <div>Figma</div>
-    <div>Adobe Creative Suite</div>
+    <div class="skill-card" data-tooltip="Expert in layout structure">HTML</div>
+<div class="skill-card" data-tooltip="Modern styles and responsive design">CSS</div>
+<div class="skill-card" data-tooltip="Dynamic interactivity">JavaScript</div>
+<div class="skill-card" data-tooltip="Design & Prototyping">Figma</div>
+<div class="skill-card" data-tooltip="Branding & Visual Design">Photoshop</div>
+<div class="skill-card" data-tooltip="Data analysis & charts">Excel</div>
+<div class="skill-card" data-tooltip="Data visualization & reporting">Power BI</div>
+<div class="skill-card" data-tooltip="Database management">SQL</div>
+<div class="skill-card" data-tooltip="Automation and logic">Python</div>
+<div class="skill-card" data-tooltip="UI for Android/iOS">Flutter (UI)</div>
+
   </div>
 </section>
 
@@ -113,5 +133,27 @@
   <script>
     AOS.init();
   </script>
+ 
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6881565b1786aa1911e70e9f/1j0sjilij';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+
+
+</body>
+</html>
+
 </body>
 </html>

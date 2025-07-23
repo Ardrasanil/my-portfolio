@@ -38,10 +38,25 @@ function erase() {
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(type, 1000);
 });
+
 window.addEventListener("load", function() {
   const loader = document.getElementById("loader");
-  loader.style.opacity = 0;
-  setTimeout(() => {
-    loader.style.display = "none";
-  }, 500);
+  if (loader) {
+    loader.style.opacity = 0;
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, 500);
+  }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const closeBtn = document.getElementById("close-btn");
+  const introBox = document.getElementById("intro-box");
+
+  if (closeBtn && introBox) {
+    closeBtn.addEventListener("click", function () {
+      introBox.style.display = "none";
+    });
+  }
+});
+
