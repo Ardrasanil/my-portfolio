@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: linear-gradient(to bottom right, #000000, #0f0f0f);
+      color: white;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 0 15px #ff1a75;
+    }
+
+    nav a {
+      color: #ff1a75;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: white;
+      text-shadow: 0 0 10px #ff1a75;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #ff1a75;
+      text-shadow: 0 0 10px #ff1a75;
+    }
+
+    .contact-container {
+      max-width: 1100px;
+      margin: 50px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    .contact-form {
+      flex: 1 1 450px;
+      background: rgba(255, 26, 117, 0.05);
+      border: 1px solid rgba(255, 26, 117, 0.2);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(255, 26, 117, 0.3);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      color: white;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .contact-form button {
+      background-color: #ff1a75;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 0 10px #ff1a75;
+      transition: 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #e6005c;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff1a75;
+    }
+
+    .contact-side {
+      flex: 1 1 300px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-side img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #ff1a75;
+      box-shadow: 0 0 15px #ff1a75;
+      margin-bottom: 15px;
+    }
+
+    .contact-side a {
+      color: #ff1a75;
+      text-decoration: none;
+      font-size: 1.1rem;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .contact-side a:hover {
+      text-shadow: 0 0 10px #ff1a75;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #999;
+      border-top: 1px solid #333;
+      margin-top: 60px;
+    }
+
+    @media screen and (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Contact Me</h1>
+    <p>Let's connect and collaborate</p>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-container">
+    <div class="contact-form">
+      <form action="https://formsubmit.co/ardrasanil1@gmail.com" method="POST">
+        <!-- Protect from bots -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="thankyou.html">
+
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+    
+    <div class="contact-side">
+     
+      <p>Connect with me on LinkedIn</p>
+      <a href="https://www.linkedin.com/in/ardra-s-anil-a450862b3" target="_blank">View Profile</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Created by Ardra S Anil | © 2025</p>
+  </footer>
+</body>
+</html>

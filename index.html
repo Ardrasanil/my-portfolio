@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS Scroll Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="loader">
+  <div class="spinner"></div>
+  <p>Loading...</p>
+</div>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">My Portfolio</div>
+     <ul class="nav-links" id="nav-links">
+  <li><a href="about.html">About</a></li>
+  <li><a href="skills.html">Skills</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+
+    </div>
+
+    <!-- ✅ Hero Section with Tilt Effect -->
+    <div class="tilt-container">
+      <h1>Hello, I'm <span>Ardra</span></h1>
+      <div class="typewriter" id="typewriter-text"></div>
+      <p>UI/UX and Graphic Designer</p>
+      
+      <a href="contact.html" class="btn-hire"><button>Hire Me</button></a>
+
+    </div>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <img src="images/profile.jpg" alt="My Photo" class="profile-img">
+    <p><b>Crafting Imagination into Interactive Reality.<br/>Welcome to My Creative Dimension !!!</b></p>
+   
+   <a href="Ardraresumepdf.pdf" download class="download-btn"> <button>Download CV</button></a>
+</a>
+
+
+  </section>
+
+  <section id="skills">
+  <h2>My Skills</h2>
+  <div class="grid skills-grid">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>MySQL</div>
+    <div>Figma</div>
+    <div>Adobe Creative Suite</div>
+  </div>
+</section>
+
+  <section id="services">
+  <h2>My Services</h2>
+  <div class="grid services-grid">
+    <div>Web Development</div>
+    <div>Graphic Design</div>
+    <div>Digital Marketing</div>
+    <div>Icon Design</div>
+    <div>Package Design</div>
+    <div>UI/UX Design</div>
+  </div>
+</section>
+
+
+ 
+
+  <section id="projects">
+  <h2>Personal Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>CIRL-Period's Tracking Web App</h3>
+      <p>An app which help users to track their periiod's with reminders.</p><br/>
+    </div>
+    <div class="project-card">
+      <h3>ClassQuest</h3>
+      <p>Gamified attendance motivation website with XP rewards and tasks.</p><br/>
+    </div>
+    <div class="project-card">
+      <h3>Gradvia</h3>
+      <p>A unique learning platform integrating gamification, streaks, and challenges.</p>
+    </div>
+  </div>
+</section>
+ <section id="contact">
+     <h2>Contact Me</h2>
+   <p><b>Have any project?</b></p>
+    <button>Let's Chat</button>
+    <div class="contact-icons">
+  <a href="https://www.linkedin.com/in/ardra-s-anil-a450862b3" target="_blank" class="linkedin-link">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+    <span>Connect on LinkedIn</span>
+  </a>
+</div>
+
+  </section>
+  <footer>
+    <p>Created by ardra.s.anil | © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
